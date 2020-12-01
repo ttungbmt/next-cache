@@ -19,7 +19,7 @@ Based on [this article](https://medium.com/@igordata/how-to-cache-all-pages-in-n
 const express = require('express')
 const next = require('next')
 
-const nextCache = require('next-lru-cache')
+const nextCache = require('next-cache')
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev  })
 const ssrCache = nextCache(app, {enabled: !dev})
