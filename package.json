@@ -1,0 +1,48 @@
+{
+  "name": "@ttungbmt/next-cache",
+  "version": "0.0.1",
+  "description": "LRU cache for Next.js",
+  "source": "src/index.js",
+  "main": "dist/next-cache.js",
+  "module": "dist/next-cache.module.js",
+  "unpkg": "dist/next-cache.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "format": "prettier",
+    "dev": "microbundle watch",
+    "build": "microbundle --no-sourcemap --no-compress"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "all"
+  },
+  "author": {
+    "name": "Truong Thanh Tung",
+    "email": "ttungbmt@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttungbmt/next-cache.git"
+  },
+  "keywords": [
+    "next.js",
+    "cache",
+    "react",
+    "node",
+    "ssr"
+  ],
+  "homepage": "https://github.com/ttungbmt/next-cache.git#readme",
+  "devDependencies": {
+    "microbundle": "^0.12.4",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "lru-cache": "^6.0.0"
+  }
+}
